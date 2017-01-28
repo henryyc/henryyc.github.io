@@ -189,6 +189,8 @@ function init() {
 
 
 /*organization*/
+
+/*
 // Create the XHR object.
 function createCORSRequest(method, url) {
   var xhr = new XMLHttpRequest();
@@ -236,4 +238,4 @@ function makeCorsRequest(address) {
   xhr.send();
 }
 
-$('#aboutText').load(makeCorsRequest('https://github.com/henryyc/henryyc.github.io/blob/master/info/about.txt'));
+$('#aboutText').load(makeCorsRequest('https://github.com/henryyc/henryyc.github.io/blob/master/info/about.txt')); */
