@@ -236,4 +236,4 @@ function makeCorsRequest(address) {
   xhr.send();
 }
 
-$('#aboutText').load(makeCorsRequest('info/about.txt'));
+$('#aboutText').load(makeCorsRequest('https://github.com/henryyc/henryyc.github.io/blob/master/info/about.txt'));
