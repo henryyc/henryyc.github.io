@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Henry Chen - ePortfolio</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom Fonts -->
+      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <!-- Theme CSS -->
+      <link href="css/grayscale.css" rel="stylesheet">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+      <!-- Navigation -->
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+               Menu <i class="fa fa-bars"></i>
+               </button>
+               <a class="navbar-brand page-scroll" href="#page-top">
+               <i class="fa fa-play-circle"></i> <span class="light">Henry</span> Chen
+               </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+               <ul class="nav navbar-nav">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <li class="hidden">
+                     <a href="#page-top"></a>
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="#contact">Contact</a>
+                  </li>
+                  <li>
+                     <a class="page-scroll" href="#portfolio">Portfolio</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
+      </nav>
+      <!-- Intro Header -->
+      <header class="intro">
+         <div class="intro-body">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                     <h1 class="brand-heading">Henry Chen</h1>
+                     <p class="intro-text">Aspiring Computer Scientist
+                        <br><labels>WHS Student | College Reject | Amateur Coder</labels>
+                     </p>
+                     <a href="#about" class="btn btn-circle page-scroll">
+                     <i class="fa fa-angle-double-down animated"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- About Section -->
+      <section id="about" class="container content-section text-center">
+         <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+               <h2>- About Henry -</h2>
+               <!--
+               <p>Henry is a student at Thomas S. Wootton High School interested in Computer Science and Software Engineering.</p>
+               <p>Currently, Henry is enrolled in the Academy of Information Technology at Wootton and hopes to enter the fields of data science and augmented reality in college in order to improve quality of life.
+               <p>Languages include Java, VPython (Python + Visual) and basic Javascript.</p>-->
+               <p id="aboutText"></p>
+            </div>
+         </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="content-section text-center">
+         <div class="download-section">
+            <div class="container">
+               <div class="col-lg-8 col-lg-offset-2">
+                  <h2>Contact Me</h2>
+                  <p>Please allow 1-3 business days for a response.</p>
+                  <p><a href="mailto:henryyc@gmail.com">HenryYC@gmail.com</a></p>
+                  <!--add official links later-->
+                  <ul class="list-inline banner-social-buttons">
+                     <li>
+                        <a href="https://twitter.com/" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter [N/A]</span></a>
+                     </li>
+                     <li>
+                        <a href="https://github.com/henryyc" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                     </li>
+                     <li>
+                        <a href="https://plus.google.com/" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+ [N/A]</span></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="container content-section text-center">
+         <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+               <h2>Portfolio</h2>
+               <p>Recent Activities</p>
+            </div>
+         </div>
+
+         <!--portfolio showcase-->
+         <div class="row">
+            <div class="col-sm-4 portfolio-item">
+               <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                  <div class="caption">
+                     <div class="caption-content">
+                        <i class="fa fa-search-plus fa-3x"></i>
+                     </div>
+                  </div>
+                  <img src="img/portfolio/itl_logo_rgb.png" class="img-responsive" alt="">
+               </a>
+            </div>
+
+            <!--commented out until relevant data can be contributed-->
+            <!--
+            <div class="col-sm-4 portfolio-item">
+               <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                  <div class="caption">
+                  <div class="caption-content">
+                     <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+            </div>
+            <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+            </a>
+         </div>
+         <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+               <div class="caption">
+                  <div class="caption-content">
+                     <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+               </div>
+               <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+            </a>
+         </div>
+         <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+               <div class="caption">
+                  <div class="caption-content">
+                     <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+               </div>
+               <img src="img/portfolio/game.png" class="img-responsive" alt="">
+            </a>
+         </div>
+         <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+               <div class="caption">
+                  <div class="caption-content">
+                     <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+               </div>
+               <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+            </a>
+         </div>
+         <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+               <div class="caption">
+                  <div class="caption-content">
+                     <i class="fa fa-search-plus fa-3x"></i>
+                  </div>
+               </div>
+               <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+            </a>
+         </div>
+         </div>
+         -->
+         <!end of comment>
+
+         <br>
+         <div class="col-lg-8 col-lg-offset-2 text-center">
+            <a href="downloads/ChenHenry_Resume_20161231.pdf" class="btn btn-lg btn-outline"><i class="fa fa-download"></i> Download Resume</a>
+         </div>
+      </section>
+      <!-- map Section -->
+      <div id="map"></div>
+      <!-- Footer -->
+      <footer>
+         <div class="container text-center">
+            <p>Thanks to <a href="http://gratisography.com/">Gratisography</a> for stock photos and <a href="http://snazzymaps.com/">Snazzy Maps</a> for the Google Maps skin.</p>
+            <br><p>Based on open source themes created by <a href="http://StartBootstrap.com/">StartBootstrap.</a> 
+            <br><br><copyright>
+               Copyright &copy; Henry Chen 2016-<script type=>"text/javascript">document.write(new Date().getFullYear())</script>
+            </copyright>
+         </div>
+      </footer>
+
+      <!-- Portfolio Modals -->
+      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body">
+                        <h2>Password Data Visualization</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/nist1.png" class="img-responsive img-centered" alt="">
+
+                        <!--long version-->
+                        <!--<p>This project was completed during the National Institute of Standards and Technology's (NIST) Summer High School Internship Program (SHIP). Over the course of six weeks, I developed two programs.<br>The first was a Java program, that took in a .tsv of password data and their respective ids. The program calculated character frequency and basic character complexity. Several different .xls and .tsv files were then outputed into a folder, the latter of which were read in by the html scripts.<br>The first script took in character frequencies, then graphed them by position. Animated sort/unsort options were available, along with being able to view multiple graphs at once and interactive tooltips for easier reading. The second script created a stacked chart of position types. Both scripts used the d3.js library and open source code from Mike Bostock.<br>Code for the project can be found on <a href="https://github.com/usnistgov/PasswordVizTool">github.com/usnistgov.</a></p>-->
+
+                        <!--short version-->
+                        <p>I developed a set of programs to analyze and visualize various sets of password data. Graphing scripts used the d3.js library and open source starter code from Mike Bostock.
+                        <br><br>Code can be found on <a href="https://github.com/usnistgov/PasswordVizTool">github.com/usnistgov.</a>
+                        </p>
+                        <ul class="list-inline item-details">
+                           <li>Location:
+                              <strong><a href="https://www.nist.gov/itl">NIST ITL</a>
+                              </strong>
+                           </li>
+                           <li>Date:
+                              <strong>Summer 2016
+                              </strong>
+                           </li>
+                           <li>Languages:
+                              <strong>Java, Javascript
+                              </strong>
+                           </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!commented out until relevant data can be contributed>
+      <!--
+      <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body">
+                        <h2>Project Title</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <ul class="list-inline item-details">
+                           <li>Client:
+                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                              </strong>
+                           </li>
+                           <li>Date:
+                              <strong><a href="http://startbootstrap.com">April 2014</a>
+                              </strong>
+                           </li>
+                           <li>Service:
+                              <strong><a href="http://startbootstrap.com">Web Development</a>
+                              </strong>
+                           </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body">
+                        <h2>Project Title</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <ul class="list-inline item-details">
+                           <li>Client:
+                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                              </strong>
+                           </li>
+                           <li>Date:
+                              <strong><a href="http://startbootstrap.com">April 2014</a>
+                              </strong>
+                           </li>
+                           <li>Service:
+                              <strong><a href="http://startbootstrap.com">Web Development</a>
+                              </strong>
+                           </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body">
+                        <h2>Project Title</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <ul class="list-inline item-details">
+                           <li>Client:
+                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                              </strong>
+                           </li>
+                           <li>Date:
+                              <strong><a href="http://startbootstrap.com">April 2014</a>
+                              </strong>
+                           </li>
+                           <li>Service:
+                              <strong><a href="http://startbootstrap.com">Web Development</a>
+                              </strong>
+                           </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body">
+                        <h2>Project Title</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <ul class="list-inline item-details">
+                           <li>Client:
+                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                              </strong>
+                           </li>
+                           <li>Date:
+                              <strong><a href="http://startbootstrap.com">April 2014</a>
+                              </strong>
+                           </li>
+                           <li>Service:
+                              <strong><a href="http://startbootstrap.com">Web Development</a>
+                              </strong>
+                           </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                  <div class="rl">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body">
+                        <h2>Project Title</h2>
+                        <hr class="star-primary">
+                        <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                        <ul class="list-inline item-details">
+                           <li>Client:
+                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                              </strong>
+                           </li>
+                           <li>Date:
+                              <strong><a href="http://startbootstrap.com">April 2014</a>
+                              </strong>
+                           </li>
+                           <li>Service:
+                              <strong><a href="http://startbootstrap.com">Web Development</a>
+                              </strong>
+                           </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      -->
+      <!end of comment>
+
+      <!-- jQuery -->
+      <script src="vendor/jquery/jquery.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+      <!-- Theme JavaScript -->
+      <script src="js/grayscale.js"></script>
+   </body>
+</html>
