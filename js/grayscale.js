@@ -187,4 +187,4 @@ function init() {
     });
 }
 
-$('#aboutText').load("https://github.com/henryyc/henryyc.github.io/blob/master/info/about.txt");
+$('#aboutText').load("info/about.txt");
