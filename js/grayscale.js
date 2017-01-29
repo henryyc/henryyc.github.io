@@ -238,6 +238,8 @@ function makeCorsRequest(address) {
 
 $('#aboutText').load(makeCorsRequest('https://github.com/henryyc/henryyc.github.io/blob/master/info/about.txt')); */
 
+/* FIX: broken rn :( */
+
 // Disable Google Maps scrolling (for mobile user convenience)
 // See http://stackoverflow.com/a/25904582/1607849
 // Disable scroll zooming and bind back the click event
