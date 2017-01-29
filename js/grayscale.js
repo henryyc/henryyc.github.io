@@ -54,7 +54,7 @@ function init() {
         // The latitude and longitude to center the map (always required)
         center: latlong, //whs
 
-        gestureHandling: 'cooperative', //for mobile friendly use
+        //gestureHandling: 'cooperative', //for mobile friendly use
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
