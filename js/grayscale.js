@@ -56,7 +56,8 @@ function init() {
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
-        draggable: false,
+        
+        draggable: true,
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -169,7 +170,7 @@ function init() {
             }]
         }]
     };
-    /*
+    
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
@@ -184,7 +185,7 @@ function init() {
         position: myLatLng,
         map: map,
         icon: image
-    });*/
+    });
 }
 
 /*organization*/
