@@ -239,7 +239,7 @@ function makeCorsRequest(address) {
 }
 
 $('#aboutText').load(makeCorsRequest('https://github.com/henryyc/henryyc.github.io/blob/master/info/about.txt')); */
-
+/*
 // Disable Google Maps scrolling
 // See http://stackoverflow.com/a/25904582/1607849
 // Disable scroll zooming and bind back the click event
@@ -260,4 +260,4 @@ var onMapClickHandler = function(event) {
 }
 
 // Enable map zooming with mouse scroll when the user clicks the map
-$('.map').on('click', onMapClickHandler);
+$('.map').on('click', onMapClickHandler);*/
