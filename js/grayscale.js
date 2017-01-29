@@ -54,10 +54,12 @@ function init() {
         // The latitude and longitude to center the map (always required)
         center: latlong, //whs
 
+        gestureHandling: 'cooperative', //for mobile friendly use
+
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
-
-        gestureHandling: 'cooperative', //for mobile friendly use
+        scrollwheel: true,
+        draggable: true,
 
         // How you would like to style the map. 
         // currently using style from Snazzy Maps
