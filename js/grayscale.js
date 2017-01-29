@@ -56,10 +56,8 @@ function init() {
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false,
 
-        gestureHandling: 'cooperative', //for mobie friendly use
+        gestureHandling: 'cooperative', //for mobile friendly use
 
         // How you would like to style the map. 
         // currently using style from Snazzy Maps
