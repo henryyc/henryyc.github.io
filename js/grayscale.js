@@ -245,14 +245,14 @@ var onMapMouseleaveHandler = function(event) {
     var that = $(this);
     that.on('click', onMapClickHandler);
     that.off('mouseleave', onMapMouseleaveHandler);
-    that.find('iframe').css("pointer-events", "none");
+    map.scrollwheel = false; //removed iframe 01/29/2017
 }
 var onMapClickHandler = function(event) {
         var that = $(this);
         // Disable the click handler until the user leaves the map area
         that.off('click', onMapClickHandler);
         // Enable scrolling zoom
-        that.find('iframe').css("pointer-events", "auto");
+        map.scrollwheel = true; //removed iframe 01/29/2017
         // Handle the mouse leave event
         that.on('mouseleave', onMapMouseleaveHandler);
 }
