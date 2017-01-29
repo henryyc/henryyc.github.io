@@ -187,7 +187,6 @@ function init() {
     });
 }
 
-
 /*organization*/
 
 /*
