@@ -56,11 +56,11 @@ function init() {
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
-        
+
         draggable: true,
 
         // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
+        // currently using style from Snazzy Maps
         styles: [{
             "featureType": "water",
             "elementType": "geometry",
@@ -170,7 +170,7 @@ function init() {
             }]
         }]
     };
-    
+
     // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
@@ -258,5 +258,6 @@ var onMapClickHandler = function(event) {
         // Handle the mouse leave event
         that.on('mouseleave', onMapMouseleaveHandler);
 }
+
 // Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
