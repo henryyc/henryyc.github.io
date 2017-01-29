@@ -57,6 +57,7 @@ function init() {
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
+        draggable: false,
 
         // How you would like to style the map. 
         // currently using style from Snazzy Maps
@@ -240,7 +241,7 @@ $('#aboutText').load(makeCorsRequest('https://github.com/henryyc/henryyc.github.
 
 /* FIX: broken rn :( */
 
-// Disable Google Maps scrolling (for mobile user convenience)
+// Disable Google Maps panning & scrolling (for mobile user convenience)
 // See http://stackoverflow.com/a/25904582/1607849
 // Disable scroll zooming and bind back the click event
 var onMapMouseleaveHandler = function(event) {
@@ -248,6 +249,7 @@ var onMapMouseleaveHandler = function(event) {
     that.on('click', onMapClickHandler);
     that.off('mouseleave', onMapMouseleaveHandler);
     map.scrollwheel = false; //removed iframe 01/29/2017
+    map.draggable = false;
 }
 var onMapClickHandler = function(event) {
         var that = $(this);
@@ -255,9 +257,10 @@ var onMapClickHandler = function(event) {
         that.off('click', onMapClickHandler);
         // Enable scrolling zoom
         map.scrollwheel = true; //removed iframe 01/29/2017
+        map.draggable = true;
         // Handle the mouse leave event
         that.on('mouseleave', onMapMouseleaveHandler);
 }
 
-// Enable map zooming with mouse scroll when the user clicks the map
+// Enable map panning with mouse drag and map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
