@@ -59,6 +59,8 @@ function init() {
         scrollwheel: false,
         draggable: false,
 
+        gestureHandling: 'cooperative', //for mobie friendly use
+
         // How you would like to style the map. 
         // currently using style from Snazzy Maps
         styles: [{
@@ -238,29 +240,3 @@ function makeCorsRequest(address) {
 }
 
 $('#aboutText').load(makeCorsRequest('https://github.com/henryyc/henryyc.github.io/blob/master/info/about.txt')); */
-
-/* FIX: broken rn :( */
-
-// Disable Google Maps panning & scrolling (for mobile user convenience)
-// See http://stackoverflow.com/a/25904582/1607849
-// Disable scroll zooming and bind back the click event
-var onMapMouseleaveHandler = function(event) {
-    var that = $(this);
-    that.on('click', onMapClickHandler);
-    that.off('mouseleave', onMapMouseleaveHandler);
-    map.scrollwheel = false; //removed iframe 01/29/2017
-    map.draggable = false;
-}
-var onMapClickHandler = function(event) {
-        var that = $(this);
-        // Disable the click handler until the user leaves the map area
-        that.off('click', onMapClickHandler);
-        // Enable scrolling zoom
-        map.scrollwheel = true; //removed iframe 01/29/2017
-        map.draggable = true;
-        // Handle the mouse leave event
-        that.on('mouseleave', onMapMouseleaveHandler);
-}
-
-// Enable map panning with mouse drag and map zooming with mouse scroll when the user clicks the map
-$('.map').on('click', onMapClickHandler);
