@@ -432,5 +432,10 @@ labels{
 }
 copyright{
   font-size: 15px;
-  color: lightgray;
+  color: #999999;
+}
+f2{
+  font-size: 18px;
+  color: #5E5E5E;
+  margin: 0;
 }
