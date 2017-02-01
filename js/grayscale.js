@@ -58,7 +58,7 @@ function init() {
         gestureHandling: 'cooperative', //for mobile friendly use
 
         // Disables the default Google Maps UI components
-        disableDefaultUI: true, draggable: false,
+        //disableDefaultUI: true, draggable: false,
         scrollwheel: false,
 
         // How you would like to style the map. 
