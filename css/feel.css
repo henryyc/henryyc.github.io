@@ -89,9 +89,6 @@ hr.small {
 .navbar-custom .navbar-toggle:active {
   outline: none;
 }
-.navbar-custom .navbar-brand {
-  font-weight: 700;
-}
 .navbar-custom .navbar-brand:focus {
   outline: none;
 }
