@@ -24,7 +24,7 @@ $(document).ready(collapseNavbar);
 // Google Maps Scripts
 var map = null;
 
-var latlong = new google.maps.LatLng(39.077221, -77.183162); //change this to automatically rechange all map location aspects
+var latlong = new google.maps.LatLng(38.992476, -76.944006); //change this to automatically rechange all map location aspects
 
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
