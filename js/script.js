@@ -189,3 +189,12 @@ $(function() {
     })
 
 })(jQuery); // End of use strict
+
+// typed effect from typed.js
+$(".typedDes").typed({
+    strings: ["Computer Scientist", "Product Manager", "Software Engineer", "Data Scientist", "Full-Stack Developer"],
+    typeSpeed: 25,
+    loop: true,
+    startDelay: 500,
+    backDelay: 500
+});

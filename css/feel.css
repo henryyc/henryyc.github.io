@@ -19,6 +19,11 @@ body {
 .text-muted {
   color: #909090;
 }
+.text-muted-two {
+  font-size: 18px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 1);
+}
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -40,7 +45,6 @@ p {
 }
 
 /* Custom Button Styles */
-
 .btn-dark {
     border-radius: 0;
     color: #efefef;
@@ -58,7 +62,6 @@ p {
 }
 
 /* Custom Horizontal Rule */
-
 hr.small {
     max-width: 100px;
 }
@@ -138,8 +141,8 @@ hr.small {
     padding-top: 150px;
     text-align: center;
 }
-/* Header */
 
+/* Header */
 .header {
     display: table;
     position: relative;
@@ -380,4 +383,9 @@ footer {
 .btn-social:active,
 .btn-social.active {
   color: #fc6f71;
+}
+
+.typedDes{
+  color: #fc6f71;
+  font-weight: bold;
 }
