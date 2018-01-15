@@ -193,7 +193,7 @@ $(function() {
 // typed effect from typed.js
 $(".typedDes").typed({
     strings: ["Computer Scientist", "Product Manager", "Software Engineer", "Data Scientist", "Full-Stack Developer"],
-    typeSpeed: 25,
+    typeSpeed: 0,
     loop: true,
     startDelay: 250,
     backDelay: 750
