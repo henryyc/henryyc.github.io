@@ -11,6 +11,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	height: 100vh;
 }
 
 /* fade in and out */
@@ -34,7 +35,7 @@ a:hover {
 /* my defaults for nav */
 .nav {
 	line-height: 5rem;
-		color: #777;
+	color: #777;
   font-family: 'Montserrat';
 	text-transform: uppercase;
 }
@@ -62,7 +63,7 @@ a:hover {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat';
   background-color: white;
 }
 .navbar-custom .navbar-toggle {
