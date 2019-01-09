@@ -11,11 +11,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-@media (max-width: 768px) {
-    body {
-        height:100vh;
-    }
+	height:100vh;
 }
 
 /* fade in and out */
