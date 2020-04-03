@@ -131,7 +131,7 @@ a:hover {
 	width: 100vw;
 	margin: 0;
 	padding: 0;
-	height: 100vh;
+	height: 100%;
 }
 .darken {
 	background: rgba(255, 255, 255, 0.2);
@@ -152,7 +152,6 @@ a:hover {
 .home, .about, .portfolio, .contact {
 	position: relative;
 }
-
 .home {
 	margin-top: 18%;
 }
@@ -160,11 +159,9 @@ a:hover {
   color: #fc6f71;
   font-weight: bold;
 }
-
 .about {
 	margin-top: 15%;
 }
-
 .portfolio {
 	margin-top: 0%;
   display: flex;
@@ -183,65 +180,15 @@ a:hover {
 .portfolio .personal {
 	background-color: #ffcc00;
 }
-.portfolio .on-left {
-	text-align: left;
-  justify-content: left;
-  align-items: left;
-}
-.portfolio .on-right {
-	bottom: 0;
-	text-align: right;
-  justify-content: right;
-  align-items: right;
-}
-.portfolio .portfolio-item {
-  margin: 0 0 1rem;
-  right: 0;
-}
-.portfolio .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
+.portfolio .portfolio-caption {
   max-width: 300px;
-  margin: 0 auto;
-}
-.portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(252, 111, 113, 0.7);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-}
-.portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
-}
-.portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: white;
-}
-.portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px;
-}
-.portfolio .portfolio-item .portfolio-caption {
-  max-width: 300px;
-  margin: 0 auto;
   background-color: white;
-  text-align: center;
   padding: 25px;
 }
-.portfolio .portfolio-item .portfolio-caption h4 {
-  text-transform: none;
+.portfolio .portfolio-caption h4 {
   margin: 0;
 }
-.portfolio .portfolio-item .portfolio-caption p {
+.portfolio .portfolio-caption p {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
@@ -250,20 +197,54 @@ a:hover {
 .portfolio * {
   z-index: 2;
 }
-@media (min-width: 767px) {
-  .portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
+.card {
+	background-color: #f2f8f9;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none !important;
 
+  display: block;
+  max-width: 300px;
+  border-radius: 4px;
+  padding: 32px 24px;
+	margin: 0 0 30px;
+	border: 1px solid #f2f8f9;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+	box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+	transition: all 0.2s ease-out;
+  border: 1px solid #cccccc;
+  background-color: #F8FEFF;
+}
+.card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+.card h4 {
+	margin: 0;
+}
+.card p {
+  font-size: 16px;
+  color: #4C5656;
+  margin: 0;
+  transition: color 0.3s ease-out;
+}
 .contact {
 	margin-top: 15%;
 }
-
 .title {
 	font-size: 400%;
 	font-weight: 600;
 	overflow: wrap;
+}
+.modal-body {
+	text-align: left;
+}
+.modal-body p {
+	margin-top: 2px;
 }
 
 /* page styles */

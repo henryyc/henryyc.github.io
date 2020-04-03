@@ -109,9 +109,9 @@ $('#home-link').click();
 
 // typing effect from typed.js
 $('.typedDes').typed({
-    strings: ['full stack dev', 'algorithms', 'product management', 'data science'],
-    typeSpeed: 0,
-    loop: true,
+    strings: ['software engineer'],
+    typeSpeed: 30,
+    loop: false,
     startDelay: 250,
     backDelay: 1000
 });
