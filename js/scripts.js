@@ -4,22 +4,17 @@ $('#home-link').click(function() {
 	$('.about').fadeOut('fast', function() {
         document.getElementById('about-link').classList.remove('current');
 
-        // fade out portfolio
-        $('.portfolio').fadeOut('fast', function() {
-            document.getElementById('portfolio-link').classList.remove('current');
+        // fade out experience
+        $('.experience').fadeOut('fast', function() {
+            document.getElementById('experience-link').classList.remove('current');
 
-            // fade out contact
-            $('.contact').fadeOut('fast', function() {
-                document.getElementById('contact-link').classList.remove('current');
+            // fade in home
+            document.getElementById('home-link').classList.add('current');
+            $('.home').fadeIn('slow');
 
-                // fade in home
-                document.getElementById('home-link').classList.add('current');
-                $('.home').fadeIn('slow');
-
-								// un-darken background
-								document.getElementById('main').classList.remove('darken');
-								document.getElementById('main').classList.add('undarken');
-            });
+						// un-darken background
+						document.getElementById('main').classList.remove('darken');
+						document.getElementById('main').classList.add('undarken');
         });
     });
 });
@@ -30,28 +25,23 @@ $('#about-link').click(function() {
 	$('.home').fadeOut('fast', function() {
         document.getElementById('home-link').classList.remove('current');
 
-        // fade out portfolio
-        $('.portfolio').fadeOut('fast', function() {
-            document.getElementById('portfolio-link').classList.remove('current');
+        // fade out experience
+        $('.experience').fadeOut('fast', function() {
+            document.getElementById('experience-link').classList.remove('current');
 
-            // fade out contact
-            $('.contact').fadeOut('fast', function() {
-                document.getElementById('contact-link').classList.remove('current');
+            // fade in about
+            document.getElementById('about-link').classList.add('current');
+            $('.about').fadeIn('slow');
 
-                // fade in about
-                document.getElementById('about-link').classList.add('current');
-                $('.about').fadeIn('slow');
-
-								// darken background
-								document.getElementById('main').classList.remove('undarken');
-								document.getElementById('main').classList.add('darken');
-            });
+						// darken background
+						document.getElementById('main').classList.remove('undarken');
+						document.getElementById('main').classList.add('darken');
         });
     });
 });
 
-// go to portfolio page
-$('#portfolio-link').click(function() {
+// go to experience page
+$('#experience-link').click(function() {
     // fade out home
 	$('.home').fadeOut('fast', function() {
         document.getElementById('home-link').classList.remove('current');
@@ -60,46 +50,13 @@ $('#portfolio-link').click(function() {
         $('.about').fadeOut('fast', function() {
             document.getElementById('about-link').classList.remove('current');
 
-            // fade out contact
-            $('.contact').fadeOut('fast', function() {
-                document.getElementById('contact-link').classList.remove('current');
+            // fade in experience
+            document.getElementById('experience-link').classList.add('current');
+            $('.experience').fadeIn('slow');
 
-                // fade in portfolio
-                document.getElementById('portfolio-link').classList.add('current');
-                $('.portfolio').fadeIn('slow');
-
-								// darken background
-								document.getElementById('main').classList.remove('undarken');
-								document.getElementById('main').classList.add('darken');
-            });
-        });
-    });
-});
-
-// go to contact page
-$('#contact-link').click(function() {
-    // fade out home
-	$('.home').fadeOut('fast', function() {
-        document.getElementById('home-link').classList.remove('current');
-
-        // fade out about
-        $('.about').fadeOut('fast', function() {
-            document.getElementById('about-link').classList.remove('current');
-
-            // fade out portfolio
-            $('.portfolio').fadeOut('fast', function() {
-                document.getElementById('portfolio-link').classList.remove('current');
-
-                // fade in contact
-                document.getElementById('contact-link').classList.add('current');
-                $('.contact').fadeIn('slow');
-
-								// darken background
-								document.getElementById('main').classList.remove('undarken');
-                if (!document.getElementById('main').classList.contains('darken')) {
-									document.getElementById('main').classList.add('darken');
-								}
-            });
+						// darken background
+						document.getElementById('main').classList.remove('undarken');
+						document.getElementById('main').classList.add('darken');
         });
     });
 });
